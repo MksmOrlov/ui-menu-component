@@ -17,7 +17,7 @@ ui_menu_x
     => nrel_authors: ... (* -> Sadovski;; *);
     => nrel_component_dependencies: ... (* <- empty_set;; *);
 
-    => nrel_storage_address: [https://github.com/MksmOrlov/ui-menu-component] (* <- github_url;; *);
+    => nrel_component_address: [https://github.com/MksmOrlov/ui-menu-component] (* <- github_url;; *);
     => nrel_installation_method: ... (* <- concept_component_dynamically_installed_method;; *);;
 *];;
 
