@@ -1,13 +1,23 @@
 ui_menu_specification
-<- concept_reusable_component;
-<- concept_atomic_component;
-<- concept_interface_component;
+    <- concept_reusable_component_specification;;
 
-=> nrel_author: ... (* -> Sadovski;; *);
-=> nrel_explanation: [UI menu component.] (*<- lang_en;;*);
+ui_menu_specification = [*
+ui_menu_x
+    <- concept_reusable_component;;
+    <- concept_atomic_reusable_component;;
+    <- concept_independent_reusable_component;;
+    <- concept_reusable_interface_component;;
+    <- concept_reusable_dynamically_installed_component;;
+    <- concept_reusable_source_code_component;;
 
-=> nrel_inner_deps: ...;
-=> nrel_outer_deps: ...;
-=> nrel_upstream_url: [https://github.com/MksmOrlov/ui-menu-component] (*<- github_url;;*);
-=> nrel_installation_command: [git clone https://github.com/MksmOrlov/ui-menu-component ./build_kb.sh];;
+    => nrel_sc_identifier: [UI menu specification](* <- lang_en;; *);;
+    => nrel_key_sc_element: concept_menu;;
+    => nrel_purpose: [Display menu.](* <- lang_en;; *);;
+    => nrel_explanation: [UI menu component.] (* <- lang_en;; *);;
+    => nrel_authors: ... (* -> Sadovski;; *);;
+    => nrel_component_dependencies: ... (* <- empty_set;; *);;
+
+    => nrel_storage_address: [https://github.com/MksmOrlov/ui-menu-component] (* <- github_url;; *);;
+    => nrel_installation_method: ... (* <- concept_component_dynamically_installed_method;; *);;
+*];;
 
